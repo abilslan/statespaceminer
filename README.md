@@ -16,5 +16,3 @@ Usage:
 - There are options to read and write out Pajek format network and partition files for further visual analysis.
 - An E-Cell model format can also be written out for ODE modelling if real kinetic parameters are known about the network.
 - Menu 5 (targeting menu) allows for constitutive knock-out or knock-in of nodes. After recalculation of statespace, effects on attractor states can be observed to model, eg, selective inhibiton.
-- 
-
