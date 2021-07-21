@@ -8,7 +8,7 @@ Usage:
 - From the main menu, choose the rules menu 3 (rules menu). For simple analysis, threshold rules should be activated. These are simply:
 
 
-[image](https://user-images.githubusercontent.com/75328354/126550619-ade7e369-33f2-41e3-afb6-925ba4ab3463.png)
+|[image](https://user-images.githubusercontent.com/75328354/126550619-ade7e369-33f2-41e3-afb6-925ba4ab3463.png)
 
 - Where ...
 - 
