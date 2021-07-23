@@ -3,7 +3,7 @@ This was written some time before I was sold on the importance of commenting (~2
 
 Bilsland et al (2014), Mathematical model of a telomerase transcriptional regulatory network developed by cell-based screening: analysis of inhibitor effects and telomerase expression mechanisms. PLoS Comput Biol; 10(2):e1003448.
 
-The code wasn't originally published with the paper, although the binary was. I haven't looked at this in years, but it built successfully in codeblocks on 22/7/21. Also included here is the telomerase reverse transctiptase transcriptional network that we identified by cell-based screening. It is provided in Pajek format and was used to produce several of the figures in the paper using node targeting options in the application.
+The code wasn't originally published with the paper, although the binary was. I haven't looked at this in years, but it built successfully in codeblocks on 22/7/21. Also included here is the telomerase reverse transctiptase (TERT) transcriptional network that we identified by cell-based screening. It is provided in Pajek format, along with vertex IDs, and was used to produce several of the figures in the paper using node targeting options in the application.
 
 Usage:
 - The program is an interactive command-line application.
