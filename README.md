@@ -3,12 +3,12 @@ This was written some time before I was sold on the importance of commenting (~2
 
 Bilsland et al (2014), Mathematical model of a telomerase transcriptional regulatory network developed by cell-based screening: analysis of inhibitor effects and telomerase expression mechanisms. PLoS Comput Biol; 10(2):e1003448.
 
-The code wasn't originally published with the paper, although the binary was. I haven't looked at this in years, but it built successfully in codeblocks on 22/7/21. Also included here is the telomerase reverse transctiptase (TERT) transcriptional network that we identified by cell-based screening. It is provided in Pajek format, along with vertex IDs, and was used to produce several of the figures in the paper using node targeting options in the application.
+The code wasn't originally published with the paper(mainly because, when the time came, I was a bit embarrassed about the general absence of comments but I suppose it doesn't matter now...). The binary was, however. I haven't looked at this in years, but it built successfully in codeblocks on 22/7/21. Also included here is the telomerase reverse transctiptase (TERT) transcriptional network that we identified by cell-based screening. It is provided in Pajek format, along with vertex IDs, and was used to produce several of the figures in the paper using node targeting options in the application.
 
 Usage:
 - The program is an interactive command-line application.
 - The user simply selects actions to perform to initialise and perform RBN analysis from a series of menus.
-- From the main menu, choose option 1 (network menu). Initialise a network randomly or loading from file. Accepted network file formats are Pajek .net adjacency matrix representation or Cytoscape format (but see below for comments on Cytoscape parsing).
+- From the main menu, choose option 1 (network menu). Initialise a network randomly or loading from file. Accepted network file formats are Pajek .net adjacency matrix representation or Cytoscape .xgmml format (but see below for comments on Cytoscape parsing).
 - From the main menu, choose the menu 3 (rules menu). For simple analysis, threshold rules should be activated. These are simply:
 
 ![image](https://user-images.githubusercontent.com/75328354/126550851-d378edb4-3f07-405b-9452-2a52e30d0263.png)
@@ -22,4 +22,4 @@ Usage:
 - Menu 5 (targeting menu) allows for constitutive knock-out or knock-in of nodes. After recalculation of statespace, effects on attractor states can be observed to model, eg, selective inhibiton.
 
 NOTES:
-- The cytoscape parsing functions are in the header file Cytoparser1.h. These were originally intended to allow network models developed in the Metacore/GeneGO pathway analysis platform to be imported and relied on a Cytoscape plugin maintained by GeneGO. However, support for this ended years ago and the plugin was withdrawn. I have not maintained the cytoscape format parser at all and in fact it seems to be throwing an error at the moment but the Pajek parser works.
+- The cytoscape parsing functions are in the header file Cytoparser1.h. These were originally intended to allow network models developed in the Metacore/GeneGO pathway analysis platform to be imported and relied on a Cytoscape plugin maintained by GeneGO. However, support for this ended years ago and the plugin was withdrawn. I have not maintained the cytoscape format parser at all and in fact it seems to be throwing an error at the moment. It worked under Win32 and might be a compatibility issue. I haven't looked in detail, but the Pajek parser works.
