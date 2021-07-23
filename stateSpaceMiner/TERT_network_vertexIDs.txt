@@ -1,0 +1,15 @@
+v1	AR
+v2	cJUN
+v3	p53
+v4	SP1
+v5	E2F1
+v6	NMYC
+v7	MAD1
+v8	p65
+v9	cMYC
+v10	HIF1
+v11	cFOS
+v12	SP3
+v13	STAT3
+v14	NR2F2
+v15	hTERT
