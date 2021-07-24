@@ -1,9 +1,9 @@
-Win32 C program for statespace analysis of synchronous;y updating random Boolean network models, created in Dev-C++ IDE.
-This was written some time before I was sold on the importance of commenting (~2012), so the code itself may be less than illuminating. The expected use was for RBN analysis of biological pathways and to assist portability of network models between applications. We used this in the paper:
+Windows console program for statespace analysis of synchronously updating random Boolean network models, created in Dev-C++ IDE.
+The code is pretty sparse on commenting so may not be very illuminating (it was written in 2010/2011 which was some time before I realised that this is actually quite important). The expected use was for RBN analysis of biological pathways and to assist portability of network models between applications. We used this in the paper:
 
 Bilsland et al (2014), Mathematical model of a telomerase transcriptional regulatory network developed by cell-based screening: analysis of inhibitor effects and telomerase expression mechanisms. PLoS Comput Biol; 10(2):e1003448.
 
-The code wasn't originally published with the paper(mainly because, when the time came, I was a bit embarrassed about the general absence of comments but I suppose it doesn't matter now...). The binary was, however. I haven't looked at this in years, but it built successfully in codeblocks on 22/7/21. Also included here is the telomerase reverse transctiptase (TERT) transcriptional network that we identified by cell-based screening. It is provided in Pajek format, along with vertex IDs, and was used to produce several of the figures in the paper using node targeting options in the application.
+The code wasn't originally published with the paper but the binary was. I haven't looked at this in years, but it built successfully in codeblocks on 22/7/21. Also included here is the telomerase reverse transctiptase (TERT) transcriptional network that we identified by cell-based screening. It is provided in Pajek format, along with vertex IDs, and was used to produce several of the figures in the paper using node targeting options in the application.
 
 Usage:
 - The program is an interactive command-line application.
@@ -22,4 +22,4 @@ Usage:
 - Menu 5 (targeting menu) allows for constitutive knock-out or knock-in of nodes. After recalculation of statespace, effects on attractor states can be observed to model, eg, selective inhibiton.
 
 NOTES:
-- The cytoscape parsing functions are in the header file Cytoparser1.h. These were originally intended to allow network models developed in the Metacore/GeneGO pathway analysis platform to be imported and relied on a Cytoscape plugin maintained by GeneGO. However, support for this ended years ago and the plugin was withdrawn. I have not maintained the cytoscape format parser at all and in fact it seems to be throwing an error at the moment. It worked under Win32 and might be a compatibility issue. I haven't looked in detail, but the Pajek parser works.
+- Loading from cytoscape was originally intended to allow network models developed in the Metacore/GeneGO pathway analysis platform to be imported and relied on a Cytoscape plugin maintained by GeneGO. However, support for this ended years ago and the plugin was withdrawn. The parser is very specific to the GeneGO export format rather than general cytoscape files. I have not maintained or extended it, but the Pajek parser works.
