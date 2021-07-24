@@ -23,3 +23,4 @@ Usage:
 
 NOTES:
 - Loading from cytoscape was originally intended to allow network models developed in the Metacore/GeneGO pathway analysis platform to be imported and relied on a Cytoscape plugin maintained by GeneGO. However, support for this ended years ago and the plugin was withdrawn. The parser is very specific to the GeneGO export format rather than general cytoscape files. I have not maintained or extended it, but the Pajek parser works.
+- I have not checked the E-cell export. It worked at the time but E-cell may well have changed a lot, if it still exists.
